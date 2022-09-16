@@ -7,7 +7,7 @@ if(isset($_GET["temperature"]) && isset($_GET["humidity"])) {
    $servername = "localhost";
    $username = "root";
    $password = "";
-   $dbname = "bla";
+   $dbname = "team-two";
 
    // Create connection
    $conn = new mysqli($servername, $username, $password, $dbname);
