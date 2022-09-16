@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_GET["temperature"])) {
+if(isset($_GET["temperature"]) && isset($_GET["humidity"])) {
    $temperature = $_GET["temperature"]; // get temperature value from HTTP GET
    $humidity = $_GET["humidity"];
 
@@ -26,6 +26,6 @@ if(isset($_GET["temperature"])) {
 
    $conn->close();
 } else {
-   echo "temperature is not set";
+   echo "temperature or humidity is not set";
 }
 ?>
