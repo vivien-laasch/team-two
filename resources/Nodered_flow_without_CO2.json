@@ -1,0 +1,644 @@
+[
+    {
+        "id": "e17d2c81e0b74f7d",
+        "type": "tab",
+        "label": "Database Inserter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ec590640c037a0b7",
+        "type": "tab",
+        "label": "Data select",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a830bd643bd1979f",
+        "type": "serial-port",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "a0109365cbcbc3e0",
+        "type": "MySQLdatabase",
+        "name": "Database",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "teamtwo",
+        "tz": "+02:00",
+        "charset": "UTF8"
+    },
+    {
+        "id": "193c82e9b87f697a",
+        "type": "ui_tab",
+        "name": "TeamClean",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "32cc0c53c72712f1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#429b22",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#429b22",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#429b22",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#60d336",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#429b22",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1717571a12407569",
+        "type": "ui_group",
+        "name": "TeamClean_One",
+        "tab": "193c82e9b87f697a",
+        "order": 1,
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "58b67ca5b93fa11f",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "c2163c0e529d5c32",
+        "type": "ui_group",
+        "name": "TeamClean_Two_Group",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0916f28fc7fc97bc",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "193c82e9b87f697a",
+        "order": 2,
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "326e8ef0.619b6a",
+        "type": "ui_group",
+        "name": "Odds",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false
+    },
+    {
+        "id": "7268e2bab45a7353",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "cb0d8e3997d24f20",
+        "type": "mysql",
+        "z": "e17d2c81e0b74f7d",
+        "mydb": "a0109365cbcbc3e0",
+        "name": "Database Connector",
+        "x": 1560,
+        "y": 500,
+        "wires": [
+            [
+                "27f64b8d970178eb"
+            ]
+        ]
+    },
+    {
+        "id": "27f64b8d970178eb",
+        "type": "debug",
+        "z": "e17d2c81e0b74f7d",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "7200912e41b59328",
+        "type": "serial in",
+        "z": "e17d2c81e0b74f7d",
+        "d": true,
+        "name": "Arduino Input",
+        "serial": "a830bd643bd1979f",
+        "x": 830,
+        "y": 500,
+        "wires": [
+            [
+                "b6b366b941a242ad"
+            ]
+        ]
+    },
+    {
+        "id": "79bd4686f165dd49",
+        "type": "debug",
+        "z": "e17d2c81e0b74f7d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b6b366b941a242ad",
+        "type": "json",
+        "z": "e17d2c81e0b74f7d",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 1010,
+        "y": 500,
+        "wires": [
+            [
+                "0afba084e52c1779",
+                "79bd4686f165dd49"
+            ]
+        ]
+    },
+    {
+        "id": "0afba084e52c1779",
+        "type": "function",
+        "z": "e17d2c81e0b74f7d",
+        "name": "Humid+Temp SQL Insert",
+        "func": "let temperature = msg.payload.Temperature;\nlet humidity = msg.payload.Humidity;\n\n\nmsg.topic = \"INSERT INTO measurements (humidity, temperature)  VALUES (\" + humidity + \", \"+temperature+\")\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 500,
+        "wires": [
+            [
+                "cb0d8e3997d24f20"
+            ]
+        ]
+    },
+    {
+        "id": "d0ce20e8c0f946a8",
+        "type": "inject",
+        "z": "ec590640c037a0b7",
+        "name": "Data Select",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM measurements WHERE created_at >= NOW() - INTERVAL 1 DAY;",
+        "payload": "",
+        "payloadType": "num",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "19b908f6174f2c82"
+            ]
+        ]
+    },
+    {
+        "id": "e8923aa218daa4a4",
+        "type": "ui_chart",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "group": "1717571a12407569",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "bezier",
+        "nodata": "Wo data?",
+        "dot": false,
+        "ymin": "",
+        "ymax": "50",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f77502",
+            "#aec7e8",
+            "#f77502",
+            "#2ca02c",
+            "#98df8a",
+            "#ab0303",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19b908f6174f2c82",
+        "type": "mysql",
+        "z": "ec590640c037a0b7",
+        "mydb": "a0109365cbcbc3e0",
+        "name": "Database Connector",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "a2c4c799e67c18b5",
+                "04079ee72ad094c8",
+                "fa75dff11f9cd07f",
+                "60ce1c2ffd605d61"
+            ]
+        ]
+    },
+    {
+        "id": "8aaf06d6c08956d0",
+        "type": "debug",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a2c4c799e67c18b5",
+        "type": "change",
+        "z": "ec590640c037a0b7",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\t\t  [\t    {\t\t        \"series\": [\"Temperature\", \"Target Temperature\"],\t        \t       \"data\": [\t                    [\t                    $.payload.\t                      {\t                  \t                        \"x\": created_at,\t                        \"y\": temperature\t                      \t                      }\t                    ],\t                    [\t                    $.payload.\t                      {\t                  \t                        \"x\": created_at,\t                        \"y\": \"21.6\"\t                      \t                      }\t                    ]\t                ]\t    }\t  ]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "e8923aa218daa4a4",
+                "8aaf06d6c08956d0"
+            ]
+        ]
+    },
+    {
+        "id": "04079ee72ad094c8",
+        "type": "debug",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "67c0b33e8efc4c2d",
+        "type": "ui_chart",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "group": "0916f28fc7fc97bc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "bezier",
+        "nodata": "Wo data?",
+        "dot": false,
+        "ymin": "",
+        "ymax": "50",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#6fcec7",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "568e980d603ecfe6",
+        "type": "debug",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "fa75dff11f9cd07f",
+        "type": "change",
+        "z": "ec590640c037a0b7",
+        "name": "Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\t\t  [\t    {\t\t        \"series\": [\"Humidity\", \"Lowest Ideal Humidity\"],\t        \t       \"data\": [\t                    [\t                    $.payload.\t                      {\t                  \t                        \"x\": created_at,\t                        \"y\": humidity\t                      \t                      }\t                    ],\t                                        [\t                    $.payload.\t                      {\t                  \t                        \"x\": created_at,\t                        \"y\": '40'\t                      \t                      }\t                    ]\t                ]\t    }\t  ]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "67c0b33e8efc4c2d",
+                "568e980d603ecfe6"
+            ]
+        ]
+    },
+    {
+        "id": "2413a33dd0f66c0c",
+        "type": "ui_chart",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "group": "0916f28fc7fc97bc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Heat Index",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "bezier",
+        "nodata": "Wo data?",
+        "dot": false,
+        "ymin": "",
+        "ymax": "50",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e02d00",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f14e2bd44d01742",
+        "type": "debug",
+        "z": "ec590640c037a0b7",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "60ce1c2ffd605d61",
+        "type": "change",
+        "z": "ec590640c037a0b7",
+        "name": "Heatindex",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\t\t  [\t    {\t\t        \"series\": [\"Heat Index\", \"Target Heat Index\"],\t        \t       \"data\": [\t                    [\t                    $.payload.\t                      {\t                  \t                        \"x\": created_at,\t                        \"y\": heatindex\t                      \t                      }\t                    ],\t                                        [\t                    $.payload.\t                      {\t                  \t                        \"x\": created_at,\t                        \"y\": '21'\t                      \t                      }\t                    ]\t                ]\t    }\t  ]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 240,
+        "wires": [
+            [
+                "2413a33dd0f66c0c",
+                "1f14e2bd44d01742"
+            ]
+        ]
+    }
+]
