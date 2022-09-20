@@ -25,7 +25,6 @@ void loop() {
 
 
   if(hic > 25 && state == 0){
-    Serial.println("state is 0");
     for(int i = 0; i<255; i++){
       analogWrite(pin01, i);
       analogWrite(pin02, 0);
@@ -34,7 +33,6 @@ void loop() {
     state = 1;
     
   }else if(hic < 25 && state == 1){
-     Serial.println("state is 1");
      for(int i = 0; i<255; i++){
       analogWrite(pin01, 0);
       analogWrite(pin02, i);
