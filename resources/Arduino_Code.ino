@@ -58,7 +58,7 @@ void loop() {
 void controlMotor(bool doOpen){
   if(doOpen){
     analogWrite(pinMotor1, 150);     
-  }else if(!doOpen){
+  }else {
     analogWrite(pinMotor2, 150);
   }
   delay(5000);
