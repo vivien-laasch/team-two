@@ -28,7 +28,7 @@ void loop() {
   delay(5000);
   
   if (timer <= closedWindowTimer){
-    timer += 5; //add in minutes to avoid overflow
+    timer += 5; //add in seconds to avoid overflow
   }
 
   float h = dht.readHumidity();
@@ -57,18 +57,11 @@ void loop() {
 
 void controlMotor(bool doOpen){
   if(doOpen){
-    for(int i = 0; i<1000; i++){
-      analogWrite(pinMotor1, 150);
-      analogWrite(pinMotor2, 0);
-      delay(5);
-    }        
+    analogWrite(pinMotor1, 150);     
   }else if(!doOpen){
-     for(int i = 0; i<1000; i++){
-      analogWrite(pinMotor1, 0);
-      analogWrite(pinMotor2, 150);
-      delay(5);
-     }
+    analogWrite(pinMotor2, 150);
   }
+  delay(5000);
   analogWrite(pinMotor1, 0);
   analogWrite(pinMotor2, 0);
 }
