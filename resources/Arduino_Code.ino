@@ -51,7 +51,7 @@ void loop() {
     isOpen = false;
     timer = 0;
   }
-  if(!isOpen && doOpenWindow() && timer >= openWindowTimer){
+  if(!isOpen && doOpenWindow(t,co2) && timer >= openWindowTimer){
     controlMotor(true);
     isOpen = true;
     timer = 0;
